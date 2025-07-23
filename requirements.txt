@@ -1,7 +1,9 @@
-streamlit
 pandas
 numpy
 matplotlib
 seaborn
 scikit-learn
-streamlit-extras
+statsmodels
+streamlit
+pydotplus
+graphviz
