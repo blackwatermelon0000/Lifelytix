@@ -1,6 +1,6 @@
-# 🧠 Lifelytix
+# 🧠 Healthviz
 
-**Lifelytix** is a comprehensive AI-powered health analytics app built with Streamlit and real-world NHANES data. It performs:
+**Healthviz** is a comprehensive AI-powered health analytics app built with Streamlit and real-world NHANES data. It performs:
 
 - 📊 Exploratory Data Analysis (EDA)
 - 🔍 Predictive Modeling with Regression & Classification
@@ -24,4 +24,4 @@
 
 ```bash
 pip install -r requirements.txt
-streamlit run app/lifelytix.py
+streamlit run app/healthviz.py
