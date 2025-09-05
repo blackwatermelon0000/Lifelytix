@@ -13,7 +13,7 @@ from scripts.naive_bayes import run_naive_bayes
 from scripts.neural_network import run_neural_network
 from scripts.EDA import run_all_eda_plots
 
-st.set_page_config(layout="wide", page_title="Lifelytix: AI Health Analyzer")
+st.set_page_config(layout="wide", page_title="Healthviz: AI Health Visualizer")
 st.markdown("""
 <style>
     /* Typography and core styles */
@@ -90,13 +90,13 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Load Data
-with st.spinner("Loading Lifelytix ⏳"):
+with st.spinner("Loading Healthviz ⏳"):
     df, X_train, X_test, y_train, y_test = load_and_preprocess_data()
     log_model, log_scaler, log_metrics, log_fig_cm, log_fig_imp, log_fig_roc = train_logistic_model(df)
 
     st.markdown("""
         <div style='background-color:#1E1E1E;padding:20px;border-radius:10px;margin-bottom:20px'>
-            <h2 style='color:#FFBF00;text-align:center;'>Welcome to Lifelytix</h2>
+            <h2 style='color:#FFBF00;text-align:center;'>Welcome to Healthviz</h2>
             <p style='color:white;text-align:center;'>Use AI-powered insights to explore your health data, trends, and predictions.</p>
         </div>
         """, unsafe_allow_html=True)
